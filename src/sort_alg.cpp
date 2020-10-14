@@ -11,7 +11,7 @@ void print_vector(int *first, int *last){
 	std::cout << "]" << std::endl;
 }
 
-int *selection_sort(int *list, int size_list){
+int *selection_sort(int *list, const int size_list){
 
 	int min_index{0};
 	int aux{0};
@@ -29,5 +29,21 @@ int *selection_sort(int *list, int size_list){
 			list[min_index] = aux;
 		}
 	}
+	return list;
+}
+
+int *bubble_sort(int *list, const int size_list){
+
+	int aux{0};
+	for(int i{0};i < size_list-1;i++){
+		for(int j{0};j < (size_list-1)-i;j++){
+			if(list[j] > list[j+1]){
+				aux = list[j];
+				list[j] = list[j+1];
+				list[j+1] = aux;
+			}
+		}
+	}
+
 	return list;
 }
