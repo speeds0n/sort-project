@@ -1,20 +1,20 @@
-### Project Sort Algorithm - DIM0119 - Estrutura de Dados Básica I - IMD/UFRN 2020.6
+### Project Sort Algorithm - DIM0119 - Estrutura de Dados Básica I - UFRN 2020.6
 
-#### To compile use Makefile
+#### To compile the program use Makefile
 
 | Command | Description |
 | ------- | --------- |
 | `make all` | Compile all files. |
-| `make run` | run the Project. |
+| `make run` | Run the project. |
 | `make objFolder` | Create bin folder. |
-| `make sort-project` | create executable file(need *.o files, compilable in make all). |
+| `make sort-project` | Create executable file(need *.o files, compilable in make all). |
 | `make bin/main.o` | Build the `main` object. |
 
 ## Functions
 
 ### Print Vector
 
-Print a list of `int` of any size.
+Print a list of `int` of any size. (add more info)
 
 ### selection_sort
 

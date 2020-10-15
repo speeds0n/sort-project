@@ -31,10 +31,6 @@ $(PROJ_NAME): $(OBJ_FILE) ./bin/main.o
 	@ echo ' '
 	@ echo 'To run the binary file use "make run" or ./$(PROJ_NAME)'
 
-#./bin/main.o: main.cpp $(OBJ_FILE)
-#	@ echo 'Building: $< Compuler: $(CC)'
-#	$(CC) $< $(CC_FLAGS) -o $@
-
 ./bin/%.o: ./src/%.cpp ./lib/%.h
 	@ echo 'Building: $<. Compiler: $(CC)'
 	$(CC) $< $(CC_FLAGS) -o $@
