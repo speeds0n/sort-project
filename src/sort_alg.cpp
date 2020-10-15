@@ -35,6 +35,7 @@ int *selection_sort(int *list, const int size_list){
 int *bubble_sort(int *list, const int size_list){
 
 	int aux{0};
+
 	for(int i{0};i < size_list-1;i++){
 		for(int j{0};j < (size_list-1)-i;j++){
 			if(list[j] > list[j+1]){
@@ -43,6 +44,22 @@ int *bubble_sort(int *list, const int size_list){
 				list[j+1] = aux;
 			}
 		}
+	}
+
+	return list;
+}
+
+int *insertion_sort(int *list, const int size_list){
+
+	int key{0}, j{0};
+	for(int i{1};i < size_list;i++){
+		key = list[i];
+		j = i - 1;
+		while(j >= 0 && list[j] > key){
+			list[j+1] = list[j];
+			j--;
+		}
+		list[j+1] = key;
 	}
 
 	return list;
