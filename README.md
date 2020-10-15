@@ -11,16 +11,20 @@
 | `make bin/main.o` | Build the `main` object. |
 
 ### Functions
-** Print Vector **
+**Print Vector**
+
 	Print a list of `int` of any size.
 
-** selection_sort **
+**selection_sort**
+
 	Sorts a list of `int` of any size, using algorithm [Selection Sort](wikipedia.org/wiki/Selection_sort). (add more info)
 
-** bubble_sort **
+**bubble_sort**
+
 	Sorts a list of `int` of any size, using algorithm [Bubble Sort](wikipedia.org/wiki/Bubble_sort). (add more info)
 
-** insertion_sort **
+**insertion_sort**
+
 	Sorts a list of `int` of any size, using algorithm [Insertion Sort](wikipedia.org/wiki/Insertion_sort). (add more info)
 	
 
